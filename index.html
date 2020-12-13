@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="css/mycss.css" type="text/css" />
+  
+  
+  <title>Uddeshya verma</title>
+
+  
+</head>
+<body>
+  
+  <div id="loading" center`>
+    <img id="loading-image" src="IMG/Loader.gif" alt="Loading..." center />
+  </div>
+  <div class="video-container">
+    <div class="color-overlay"></div>
+    <video autoplay loop muted>
+        <source src="IMG/Space.mp4" type="video/mp4" height="1000">
+    </video>
+  </div>
+
+<header>
+    <nav>
+      <div class="container">
+      <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo small">My Website</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="Education.html">Education</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="https://www.hackerrank.com/1616410295_CS3d?hr_r=1">Hackerrank</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+              <li><a href="https://www.instagram.com/uddeshya.uv/" class="tooltipped btn-floating btn-small" data-position="bottom" data-tooltip="Instagram"> 
+                <i class="fab fa-instagram"></i>
+              </a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100011671078350" class="tooltipped btn-floating btn-small" data-position="bottom" data-tooltip="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a></li>
+              <li><a href="https://www.linkedin.com/in/uddeshya-verma-185a49200/" class="tooltipped btn-floating btn-small" data-position="bottom" data-tooltip="LinkedIn">
+                <i class="fab fa-linkedin "></i>
+              </a></li>
+          </ul>
+
+
+          <ul class="sidenav" id="mobile-menu">
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="https://www.hackerrank.com/1616410295_CS3d">Hackerrank</a></li>
+            <li><a href="register.html">Contact</a></li>
+            </ul>
+      </div>
+      </div>
+    </nav>
+</header>
+
+  <div class="section">
+    
+    <h1>Welcome to my World</h1>
+  </div>
+  <div class="section">
+    <img src="IMG/mypic.jpg" width="200" height="220">
+  </div>
+
+<div class="section col s4">
+  <pre>Hi, My name is Uddeshya
+I recently graduated with a B Tech degree in Computer science. Currently, I'm
+learning Web development Technologies like HTML, CSS, JavaScript and creating
+many creative websites. All of my projects will be saved on this page.
+I also have experience with Python and Java languages. I got Problem solving
+certificate of hackerrank in Python and I have created some applications on
+Java EE.
+
+Apart from this I am an Amateur Singer with 2 years of classical singing
+training and Gaming is my second hobby and we can say that about all of the most 
+popular video games have some requirement for problem-solving and/or 
+critical thinking. This promotes adaptability and cognitive flexibility.
+These are really important skills to have in any kind of problem-solving 
+task !
+
+Thanks for reading.
+Have a Beautiful day &#128512
+        </pre>
+</div>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+      document.getElementById('Container').style.visibility="hidden";
+      document.getElementById('video-container').style.visibility="hidden";
+      document.getElementById('loading').style.visibility="visible";
+      document.getElementById('loading-image').style.visibility="visible";
+      
+       
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         
+        document.getElementById('loading').style.visibility="hidden";
+      document.getElementById('loading-image').style.visibility="hidden";
+         document.getElementById('video-container').style.visibility="visible";
+         document.getElementById('container').style.visibility="visible";
+      },1000);
+  }
+};
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+	  $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $(window).bind("load", function() {  
+	$('#movie-area').load('index.html');
+}); 
+  })
+  
+  </script>
+
+</body>
+</html>

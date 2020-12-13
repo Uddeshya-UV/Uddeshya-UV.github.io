@@ -1,0 +1,77 @@
+*{
+  font-family: 'Krona One', sans-serif;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .container {
+    position: relative;
+    margin: 1vw;
+    background:transparent;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  
+  th, td {
+    padding: 20px;
+    text-align: left center;
+  }
+
+
+  p{
+    color: white;
+    font-weight: bold !important; 
+    font-size: larger;
+    
+  }
+
+  h1{
+    font-weight: bold !important; 
+    font-size: 1.2em;
+    text-decoration: underline;
+  }
+  h4{
+    font-weight: bold !important; 
+    font-size: 1.2em;
+    
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    
+  }
+  
+  /* Button styling */
+  .button {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-radius: 18px;
+    background-color: #e7ecf1;
+    border: solid 1px transparent;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    
+    cursor: pointer;
+	transition: all .1s ease-in-out;
+  }
+  button:hover {
+	  color: rgb(0, 0, 0);
+	  background-color: rgb(116, 97, 97);
+      border-color: rgb(110, 101, 101);
+      transition: all .2s ease-in-out;
+    }
+
+
+    

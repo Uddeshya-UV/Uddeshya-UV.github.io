@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact us</title>
+ <!-- Compiled and minified CSS -->
+
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+ <!-- Userdefined CSS -->
+ <link rel="stylesheet" href="Css/mycss.css">
+ <link rel="stylesheet" href="Css/RegCss.css">
+ 
+ <style>
+    
+	.button {
+		position: relative;
+		display: block;
+		width: 200px;
+		height: 50px;
+		border-radius: 18px;
+		background-color: #e7ecf1;
+		border: solid 10px transparent;
+		color: rgb(0, 0, 0);
+		font-size: 18px;
+		font-weight: 600;
+
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 6);
+		transform: scale(1);
+		animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1.2);
+		box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+ 
+ 
+ @media only screen and (max-width: 480px) {
+    table {
+        width:450px;
+    }
+    input[type=text], textarea {
+        width:75%;
+	}
+	body {
+        background-color:none;
+       }
+}
+
+
+</style>
+
+<script>
+
+    
+	
+	
+	
+	
+	  document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.querySelector('.button'),
+      loader = document.querySelector('.loader'),
+      check = document.querySelector('.check');
+  
+  btn.addEventListener('click', function () {
+    loader.classList.add('active');    
+  });
+ 
+  loader.addEventListener('animationend', function() {
+    check.classList.add('active'); 
+  });
+});
+
+</script>
+
+
+</head>
+
+<body>
+	<div class="video-container">
+		<div class="color-overlay"></div>
+		<video autoplay loop muted>
+			<source src="IMG/Space.mp4" type="video/mp4" height="1000">
+		</video>
+	  </div>
+	
+<div class="container .hide-on-small-only">
+
+	<div class="row">
+			<table class="skills">
+				<button class="button" onclick="location.href='Tech.html'"style="background-color: white";>Technical</button><br><br>
+				<button  class="button" onclick="location.href='https://www.hackerrank.com/1616410295_CS3d'" style="background-color: burlywood";>Hackerrank</button><br><br>
+				<button  class="button" onclick="location.href='certification.html'"style="background-color: white";>Certificates</button><br><br>
+				<button  class="button" onclick="location.href='index.html'" style="background-color: rgb(88, 165, 101);">Back to Home</button><br><br>
+								
+								
+			</table>
+								
+</body>
+						
+</body>
+</html>
